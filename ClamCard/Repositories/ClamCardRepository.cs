@@ -25,7 +25,7 @@ namespace ClamCard.Repositories
         {
             var StartZone = TrainCard.GetZones(station);
             var DestinationZone = TrainCard.GetZones(station);
-            if (StartZone == Zones.A && DestinationZone == Zones.B)
+            if (StartZone == Zone.A && DestinationZone == Zone.B)
             {
                 return 2.50;
             }

@@ -8,9 +8,9 @@ namespace ClamCard.Interfaces
 {
     public interface ITrainCard
     {
-        public Zones GetZones(string station);
+        public Zone GetZones(string station);
     }
-    public enum Zones
+    public enum Zone
     {
         A, B
     }

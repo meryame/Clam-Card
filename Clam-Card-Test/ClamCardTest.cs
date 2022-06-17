@@ -17,7 +17,7 @@ namespace Clam_Card_Test
         public void Michael_has_a_clam_card()
         {
             _clamRepository = MockRepository.GenerateMock<IClamCardRepository>();
-            _clamRepository.Stub(c => c.BeginningOfTrip(Arg<string>.Is.Anything));
+            _clamRepository.Stub(c => c.BeginingOfTrip(Arg<string>.Is.Anything));
             card = new Card(_clamRepository, "Michael");
         }
         [Fact]
@@ -28,7 +28,7 @@ namespace Clam_Card_Test
         [Fact]
         public void clam_card_in_aldgate_station()
         {
-            var station = _clamRepository.GetArgumentsForCallsMadeOn(c => c.BeginningOfTrip(Arg<string>.Is.Anything))[0][0];
+            var station = _clamRepository.GetArgumentsForCallsMadeOn(c => c.BeginingOfTrip(Arg<string>.Is.Anything))[0][0];
             station.Equals("Aldgate");
         }
         [Fact]
@@ -53,14 +53,14 @@ namespace Clam_Card_Test
         public void start_travel_from_zoneA()
         {
             trainCard = MockRepository.GenerateStub<ITrainCard>();
-            trainCard.Stub(t => t.GetZones("Asterisk")).Return(Zones.A);
+            trainCard.Stub(t => t.GetZones("Asterisk")).Return(Zone.A);
             _clamCardRepository = new ClamCardRepository(trainCard);
             _clamCardRepository.BeginningOfTrip("Asterisk");
         }
         [Fact]
         public void end_travel_from_zoneA()
         {
-            trainCard.Stub(t => t.GetZones("Aldgate")).Return(Zones.A);
+            trainCard.Stub(t => t.GetZones("Aldgate")).Return(Zone.A);
             price = _clamCardRepository.EndOfTrip("Aldgate");
 
         }
@@ -73,14 +73,14 @@ namespace Clam_Card_Test
         public void start_travele_from_zoneA()
         {
             trainCard = MockRepository.GenerateStub<ITrainCard>();
-            trainCard.Stub(t => t.GetZones("Aldgate")).Return(Zones.A);
+            trainCard.Stub(t => t.GetZones("Aldgate")).Return(Zone.A);
             _clamCardRepository = new ClamCardRepository(trainCard);
             _clamCardRepository.BeginningOfTrip("Aldgate");
         }
         [Fact]
         public void end_travel_from_zoneB()
         {
-            trainCard.Stub(t => t.GetZones("Balham")).Return(Zones.B);
+            trainCard.Stub(t => t.GetZones("Balham")).Return(Zone.B);
             price = _clamCardRepository.EndOfTrip("Balham");
 
         }
