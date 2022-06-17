@@ -1,0 +1,15 @@
+C:\Users\pc\source\repos\ClamCard\ClamCard\bin\Debug\net6.0\ClamCard.exe
+C:\Users\pc\source\repos\ClamCard\ClamCard\bin\Debug\net6.0\ClamCard.deps.json
+C:\Users\pc\source\repos\ClamCard\ClamCard\bin\Debug\net6.0\ClamCard.runtimeconfig.json
+C:\Users\pc\source\repos\ClamCard\ClamCard\bin\Debug\net6.0\ClamCard.dll
+C:\Users\pc\source\repos\ClamCard\ClamCard\bin\Debug\net6.0\ref\ClamCard.dll
+C:\Users\pc\source\repos\ClamCard\ClamCard\bin\Debug\net6.0\ClamCard.pdb
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.AssemblyInfo.cs
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.dll
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ref\ClamCard.dll
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.pdb
+C:\Users\pc\source\repos\ClamCard\ClamCard\obj\Debug\net6.0\ClamCard.genruntimeconfig.cache
