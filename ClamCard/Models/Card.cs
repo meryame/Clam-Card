@@ -18,7 +18,7 @@ namespace ClamCard.Models
         }
         public void TouchIn(string station)
         {
-            _clamCardRepository.BeginingOfTrip(station);
+            _clamCardRepository.BeginningOfTrip(station);
         }
         public void TouchOut(string station)
         {
