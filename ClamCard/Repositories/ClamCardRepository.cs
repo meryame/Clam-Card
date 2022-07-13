@@ -21,27 +21,27 @@ namespace ClamCard.Repositories
             StartStation = station;
         }
 
-        public double EndOfTripBySingle(string station)
+        public double EndOfTripSingle(string station)
         {
             var StartZone = TrainCard.GetZones(station);
             var DestinationZone = TrainCard.GetZones(station);
             return StartZone == Zones.A && DestinationZone == Zones.B ? 2.50 : 3.00;
         }
-        public double EndOfTripByDay(string station)
+        public double EndOfTripDay(string station)
         {
             var StartZone = TrainCard.GetZones(station);
             var DestinationZone = TrainCard.GetZones(station);
             return StartZone == Zones.A && DestinationZone == Zones.B ? 7.00 : 8.00;
         }
 
-        public double EndOfTripByWeek(string station)
+        public double EndOfTripWeek(string station)
         {
             var StartZone = TrainCard.GetZones(station);
             var DestinationZone = TrainCard.GetZones(station);
             return StartZone == Zones.A && DestinationZone == Zones.B ? 40.00 : 47.00;
         }
 
-        public double EndOfTripByMonth(string station)
+        public double EndOfTripMonth(string station)
         {
             var StartZone = TrainCard.GetZones(station);
             var DestinationZone = TrainCard.GetZones(station);
