@@ -7,7 +7,7 @@ using ClamCard.Interfaces;
 
 namespace ClamCard.Repositories
 {
-    public class ClamCardRepository
+    public class ClamCardRepository : IClamCardRepository
     {
         private readonly ITrainCard TrainCard;
         public string StartStation { get; set; }
@@ -21,15 +21,31 @@ namespace ClamCard.Repositories
             StartStation = station;
         }
 
-        public double EndOfTrip(string station)
+        public double EndOfTripBySingle(string station)
         {
             var StartZone = TrainCard.GetZones(station);
             var DestinationZone = TrainCard.GetZones(station);
-            if (StartZone == Zone.A && DestinationZone == Zone.B)
-            {
-                return 2.50;
-            }
-            return 3.00;
+            return StartZone == Zones.A && DestinationZone == Zones.B ? 2.50 : 3.00;
+        }
+        public double EndOfTripByDay(string station)
+        {
+            var StartZone = TrainCard.GetZones(station);
+            var DestinationZone = TrainCard.GetZones(station);
+            return StartZone == Zones.A && DestinationZone == Zones.B ? 7.00 : 8.00;
+        }
+
+        public double EndOfTripByWeek(string station)
+        {
+            var StartZone = TrainCard.GetZones(station);
+            var DestinationZone = TrainCard.GetZones(station);
+            return StartZone == Zones.A && DestinationZone == Zones.B ? 40.00 : 47.00;
+        }
+
+        public double EndOfTripByMonth(string station)
+        {
+            var StartZone = TrainCard.GetZones(station);
+            var DestinationZone = TrainCard.GetZones(station);
+            return StartZone == Zones.A && DestinationZone == Zones.B ? 145.00 : 165.00;
         }
     }
 }
