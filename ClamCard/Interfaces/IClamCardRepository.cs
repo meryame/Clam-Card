@@ -8,7 +8,11 @@ namespace ClamCard.Interfaces
 {
     public interface IClamCardRepository
     {
-        public void BeginingOfTrip(string station);
-        public double EndOfTrip(string station);
+        public void BeginningOfTrip(string station);
+        public double EndOfTripSingle(string station);
+        public double EndOfTripDay(string station);
+        public double EndOfTripWeek(string station);
+        public double EndOfTripMonth(string station);
+
     }
 }
